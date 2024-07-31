@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 0;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.calendario {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.calendario > div {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    background-color: #4CAF50;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.semana1, .semana2, .semana3, .semana4, .semana5, .semana6 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 5px 0;
+}
+
+.dias, .feriados {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.dias h4, .dias p, .dias h5, .feriados h4, .feriados p {
+    margin: 5px 0;
+}
+
+.feriados {
+    background-color: #e3f2fd;
+    border: 1px solid #2196F3;
+}
+
+.dias h4:first-child, .feriados h4:first-child {
+    font-size: 1.2em;
+    color: #4CAF50;
+}
+
+.dias h5, .feriados p {
+    color: #757575;
+    font-size: 0.9em;
+}
